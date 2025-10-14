@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// --- SUPER TRUNFO ---
+
 int main() { 
   // --- Variáveis para CARTA 1 ---
 
