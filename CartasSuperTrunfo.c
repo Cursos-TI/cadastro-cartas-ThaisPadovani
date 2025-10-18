@@ -30,26 +30,26 @@ float pibpercapta2;
 
 printf("--- DADOS DA CARTA 1 ---\n");
 
-printf("Estado: ");
+printf("\nEstado: ");
 scanf(" %c", &estado1);
 
-printf("Código: ");
-scanf("%s", codigodacarta1);
+printf("\nCódigo: ");
+scanf(" %s", codigodacarta1);
 
-printf("Cidade: ");
-scanf("%s", nomedacidade1);
+printf("\nCidade: ");
+scanf(" %s", nomedacidade1);
 
-printf("População: ");
-scanf("%lu", &populacao1);
+printf("\nPopulação: ");
+scanf(" %lu", &populacao1);
 
-printf("Área (km²): ");
-scanf("%f", &areakm2_1);
+printf("\nÁrea (km²): ");
+scanf(" %f", &areakm2_1);
 
-printf("PIB: ");
-scanf("%f", &pib1);
+printf("\nPIB: ");
+scanf(" %f", &pib1);
 
-printf("Pontos Turísticos: ");
-scanf("%d", &numeropontosturisticos1);
+printf("\nPontos Turísticos: ");
+scanf(" %d", &numeropontosturisticos1);
 
 // Cálculos automáticos
 
@@ -60,26 +60,26 @@ pibpercapta1 = pib1 / (float)populacao1;
 
 printf(" DADOS DA CARTA 2\n");
 
-printf("Estado: ");
+printf("\nEstado: ");
 scanf(" %c", &estado2);
 
-printf("Código: ");
-scanf("%s", codigodacarta2);
+printf("\nCódigo: ");
+scanf(" %s", codigodacarta2);
 
-printf("Cidade: ");
-scanf("%s", nomedacidade2);
+printf("\nCidade: ");
+scanf(" %s", nomedacidade2);
 
-printf("População: ");
-scanf("%lu", &populacao2);
+printf("\nPopulação: ");
+scanf(" %lu", &populacao2);
 
-printf("Área (km²): ");
-scanf("%f", &areakm2_2);
+printf("\nÁrea (km²): ");
+scanf(" %f", &areakm2_2);
 
-printf("PIB: ");
-scanf("%f", &pib2);
+printf("\nPIB: ");
+scanf(" %f", &pib2);
 
-printf("Pontos Turísticos: ");
-scanf("%d", &numeropontosturisticos2);
+printf("\nPontos Turísticos: ");
+scanf(" %d", &numeropontosturisticos2);
 
 // Cálculos automáticos
 
