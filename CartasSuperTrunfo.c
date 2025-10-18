@@ -53,8 +53,8 @@ scanf("%d", &numeropontosturisticos1);
 
 // Cálculos automáticos
 
-densidadepopulacional1 = populacao1 / areakm2_1;
-pibpercapta1 = pib1 / populacao1;
+densidadepopulacional1 = (float)populacao1 / areakm2_1;
+pibpercapta1 = pib1 / (float)populacao1;
 
 //CARTA 2 
 
@@ -83,25 +83,31 @@ scanf("%d", &numeropontosturisticos2);
 
 // Cálculos automáticos
 
-densidadepopulacional2 = populacao2 / areakm2_2;
-pibpercapta2 = pib2 / populacao2;
+densidadepopulacional2 = (float)populacao2 / areakm2_2;
+pibpercapta2 = pib2 / (float)populacao2;
 
-printf("CARTA 1\n");
+printf("\n===== CARTA 1 =====\n");
 
-printf("Cidade: %s (%c)\n", nomedacidade1, estado1);
-printf("Código: %s\n", codigodacarta1);
-printf("População: %lu | Área: %.2f km²\n", populacao1, areakm2_1);
-printf("PIB: %.2f | PIB per capita: %.2f\n", pib1, pibpercapta1);
-printf("Densidade: %.2f | Pontos Turísticos: %d\n", densidadepopulacional1, numeropontosturisticos1);
+    printf("Cidade: %s (%c)\n", nomedacidade1, estado1);
+    printf("Código: %s\n", codigodacarta1);
+    printf("População: %lu\n", populacao1);
+    printf("Área: %.2f km²\n", areakm2_1);
+    printf("PIB: %.2f\n", pib1);
+    printf("PIB per capita: %.2f\n", pibpercapta1);
+    printf("Densidade Populacional: %.2f\n", densidadepopulacional1);
+    printf("Pontos Turísticos: %d\n", numeropontosturisticos1);
 
-printf("CARTA 2\n");
+    printf("\n===== CARTA 2 =====\n");
 
-printf("Cidade: %s (%c)\n", nomedacidade2, estado2);
-printf("Código: %s\n", codigodacarta2);
-printf("População: %lu | Área: %.2f km²\n", populacao2, areakm2_2);
-printf("PIB: %.2f | PIB per capita: %.2f\n", pib2, pibpercapta2);
-printf("Densidade: %.2f | Pontos Turísticos: %d\n", densidadepopulacional2, numeropontosturisticos2);
-
-return 0;
+    printf("Cidade: %s (%c)\n", nomedacidade2, estado2);
+    printf("Código: %s\n", codigodacarta2);
+    printf("População: %lu\n", populacao2);
+    printf("Área: %.2f km²\n", areakm2_2);
+    printf("PIB: %.2f\n", pib2);
+    printf("PIB per capita: %.2f\n", pibpercapta2);
+    printf("Densidade Populacional: %.2f\n", densidadepopulacional2);
+    printf("Pontos Turísticos: %d\n", numeropontosturisticos2);
+    
+    return 0;
 
 }
