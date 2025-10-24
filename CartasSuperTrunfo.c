@@ -5,7 +5,7 @@ int main() {
     // Super Trunfo //
 
     // --- Variáveis para CARTA 1 --- //
-    
+ 
     char estado1;
     char codigo_da_carta1[30];
     char nome_da_cidade1[30];
@@ -18,6 +18,7 @@ int main() {
     float super_poder1; 
 
     // --- Variáveis para CARTA 2 --- //
+    
     char estado2;
     char codigo_da_carta2[30];
     char nome_da_cidade2[30];
@@ -119,19 +120,14 @@ int main() {
     printf("Densidade Populacional: %.2f\n", densidade_populacional2);
     printf("Pontos Turísticos: %d\n", numero_pontos_turisticos2);
 
-    // 2. Comparação das Cartas (1 = C1 Vence, 0 = C2 Vence)
-    printf("\n--- RESULTADOS DA COMPARACAO (1 = Carta 1 Vence) ---\n");
+    // Comparações de Cartas Atributo População //
 
-    // Atributos de MAIOR VENCE (População, Área, PIB, PT, PIB/hab, Super Poder)
-    printf("População:\t\t %d\n", populacao1 > populacao2 ? 1 : 0);
-    printf("Área:\t\t\t %d\n", area_km2_1 > area_km2_2 ? 1 : 0);
-    printf("PIB:\t\t\t %d\n", pib1 > pib2 ? 1 : 0);
-    printf("Pontos Turísticos:\t %d\n", numero_pontos_turisticos1 > numero_pontos_turisticos2 ? 1 : 0);
-    printf("PIB per Capita:\t\t %d\n", pib_per_capta1 > pib_per_capta2 ? 1 : 0);
-    printf("Super Poder:\t\t %d\n", super_poder1 > super_poder2 ? 1 : 0);
-
-    // Atributo de MENOR VENCE (Densidade Populacional)
-    printf("Densidade Populacional:\t %d\n", densidade_populacional1 < densidade_populacional2 ? 1 : 0);
+    if(populacao1 > populacao2){
+        printf("Carta 1 venceu!\n");
+    }else{
+        printf("Carta 2, venceu!\n");
+    }
 
     return 0;
+    
 }
